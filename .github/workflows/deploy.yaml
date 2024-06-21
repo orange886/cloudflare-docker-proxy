@@ -1,4 +1,6 @@
 name: Deploy to Cloudflare Workers
+name: Clear Yarn Cache
+run: yarn cache clean
 
 on:
   push:
