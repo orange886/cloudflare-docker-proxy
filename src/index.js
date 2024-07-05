@@ -1,4 +1,4 @@
-addEventListener("fetch", (event) => {
+addEventListener("fetch"， (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
 });
@@ -7,16 +7,16 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.qqccy.cn": dockerHub,
-  "quay.qqccy.cn": "https://quay.io",
-  "gcr.qqccy.cn": "https://gcr.io",
-  "k8s-gcr.qqccy.cn": "https://k8s.gcr.io",
-  "k8s.qqccy.cn": "https://registry.k8s.io",
-  "ghcr.qqccy.cn": "https://ghcr.io",
-  "cloudsmith.qqccy.cn": "https://docker.cloudsmith.io",
+  "docker.qqccy.top": dockerHub,
+  "quay.qqccy.top": "https://quay.io",
+  "gcr.qqccy.top": "https://gcr.io",
+  "k8s-gcr.qqccy.top": "https://k8s.gcr.io",
+  "k8s.qqccy.top": "https://registry.k8s.io",
+  "ghcr.qqccy.top": "https://ghcr.io",
+  "cloudsmith.qqccy.top": "https://docker.cloudsmith.io",
 
   // staging
-  "docker-staging.qqccy.cn": dockerHub,
+  "docker-staging.qqccy.top": dockerHub,
 };
 
 function routeByHosts(host) {
